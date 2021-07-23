@@ -1,0 +1,11 @@
+.menuItems:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@media(max-width: 768px){
+  .menuItems{
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+  }
+}

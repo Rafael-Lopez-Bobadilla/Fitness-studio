@@ -1,0 +1,53 @@
+.nav{
+  position: fixed;
+  top: 0;
+  background-color: var(--navbarBackground);
+  width: 100%;
+  font-family: mainFont;
+  font-size: 16px;
+  color: white;
+  z-index: 2;
+}
+
+.nav__wrapper{
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px 30px;
+}
+
+.nav__hamIcon{
+  width: 25px;
+}
+
+.nav__hamIcon div{
+  height: 4px;
+  background: white;
+  margin: 4px 0;
+  width: 100%;
+}
+
+.nav__name:hover, .nav__hamIcon:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nav__menu{
+  display: none;
+}
+
+.nav__menu div{
+  margin-left: 63px;
+}
+
+@media(min-width: 768px){
+  .nav__hamIcon{
+    display: none;
+  }
+  .nav__menu{
+    display: flex;
+  }
+}
