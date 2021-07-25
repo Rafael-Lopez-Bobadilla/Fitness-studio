@@ -5,8 +5,11 @@
   width: 100%;
   font-family: mainFont;
   font-size: 16px;
+  height: 50px;
   color: white;
   z-index: 2;
+  display: flex;
+  align-items: center;
 }
 
 .nav__wrapper{
@@ -16,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 12px 30px;
+  padding: 0 30px;
 }
 
 .nav__hamIcon{

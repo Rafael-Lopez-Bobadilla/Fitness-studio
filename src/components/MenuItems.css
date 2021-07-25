@@ -5,7 +5,7 @@
 
 @media(max-width: 768px){
   .menuItems{
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     border-bottom: 1px solid lightgray;
   }
 }
