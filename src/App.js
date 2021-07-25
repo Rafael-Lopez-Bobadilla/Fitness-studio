@@ -1,6 +1,6 @@
-import Hero from './components/Hero'
-import Header from './components/Header'
-import About from './components/About'
+import Hero from './components/Hero/Hero'
+import Header from './components/Header/Header'
+import About from './components/About/About'
 function App() {
   return (
     <>
