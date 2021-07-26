@@ -3,9 +3,21 @@
   cursor: pointer;
 }
 
-@media(max-width: 768px){
+.menuItems{
+  margin-bottom: 35px;
+  border-bottom: 1px solid lightgray;
+}
+
+@media(min-width: 767px){
   .menuItems{
-    margin-bottom: 35px;
-    border-bottom: 1px solid lightgray;
+    margin-left: 50px;
+    margin-bottom: 0;
+    border: none;
+  }
+}
+
+@media(min-width: 850px){
+  .menuItems{
+    margin-left: 63px;
   }
 }

@@ -1,0 +1,13 @@
+.sectionTitle{
+  font-family: mainFont;
+  font-size: 30px;
+  color: var(--darkBackground);
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media(min-width: 1279px){
+  .sectionTitle{
+    font-size: 35px;
+  }
+}

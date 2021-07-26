@@ -34,7 +34,8 @@
   padding: 5px 45px;
   margin-top: 90px;
   opacity: 0.9;
-  background-color: lightgray;
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(124, 121, 121));
+  box-shadow: 9px 9px 19px -1px rgba(0,0,0,0.41);
   position: absolute;
   border-radius: 10px;
 }
@@ -54,9 +55,9 @@
   animation-name: bounce;
 }
 
-@media(min-width: 768px){
+@media(min-width: 767px){
   .hero__msg{
-    margin-top: -100px;
+    margin-top: -90px;
     letter-spacing: 3px;
     line-height: normal;
   }

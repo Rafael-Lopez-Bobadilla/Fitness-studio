@@ -21,11 +21,8 @@
   src: url('./fonts/EBGaramond-VariableFont_wght.ttf');
 }
 :root{
-  --blueColor: #1293CA;
-  --whiteColor: #fefefe;
-  --blackColor: #000000;
   --darkBackground: #2b2b2b;
-  --grayColor: #6E7271;
   --grayBackground: #f1f1f1;
   --navbarBackground: rgb(31, 30, 30);
+  --maxWidth: 1300px;
 }
