@@ -4,13 +4,13 @@ import SideMenu from "./SideMenu"
 export default function Header() {
   const [showMenu, setShowMenu] = useState(() => false)
 
-  const handleClick = () => {
+  const moveSideMenu = () => {
     setShowMenu(() => !showMenu)
   }
   return (
     <>
-      <SideMenu show={showMenu} handleClick={handleClick} />
-      <Navbar handleHamClick={handleClick} />
+      <SideMenu show={showMenu} closeSideMenu={moveSideMenu} />
+      <Navbar openSideMenu={moveSideMenu} />
     </>
   )
 }

@@ -1,6 +1,6 @@
 .hero{
   position: relative;
-  margin-top: 50px;
+  margin-top: var(--navbarHeight);
   height: calc((var(--vh, 1vh) * 100) - 50px);
   min-height: 400px;
   display: flex;
@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   font-family: mainFont;
+  user-select: none;
 }
 
 .hero__overlay{
@@ -26,6 +27,7 @@
   color: white;
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
+  padding: 0 5px;
 }
 
 .hero__btn{
@@ -45,14 +47,19 @@
   cursor: pointer;
 }
 
-.hero__arrow{
+.hero__arrowContainer{
   display: none;
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
+  height: 100px;
+  cursor: pointer;
+}
+.hero__arrow{
   color: white;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce;
+  margin-bottom: -10px;
 }
 
 @media(min-width: 767px){
@@ -62,8 +69,10 @@
     line-height: normal;
   }
 
-  .hero__arrow{
-    display: block;
+  .hero__arrowContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .hero__btn{
@@ -73,7 +82,7 @@
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-45px); }
+  50%  { transform: translateY(-55px); }
   60%  { transform: translateY(0px); }
   70%  { transform: translateY(-22px)}
   80% { transform: translateY(0); }

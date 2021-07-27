@@ -1,8 +1,12 @@
 import './Hero.css'
 import HeroImgs from './HeroImgs'
 import { ExpandMore } from '@material-ui/icons'
-
+import { scrollTo } from '../Header/scrollTo'
 export default function Hero() {
+
+  const goToAbout = () => {
+    scrollTo('about')
+  }
 
   return (
     <div className='hero'>
@@ -12,9 +16,11 @@ export default function Hero() {
         <div className='hero__msgLine'>IN PERSUIT OF</div>
         <div className='hero__msgLine'>HEALTH AND FITNESS</div>
       </div>
-      <div className='hero__btn'>About</div>
-      <div className='hero__arrow'>
-        <ExpandMore style={{ fontSize: '70px' }} />
+      <div className='hero__btn' onClick={goToAbout}>About</div>
+      <div className='hero__arrowContainer' onClick={goToAbout}>
+        <div className='hero__arrow'>
+          <ExpandMore style={{ fontSize: '70px' }} />
+        </div>
       </div>
     </div>
   )

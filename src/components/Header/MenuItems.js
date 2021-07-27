@@ -1,5 +1,5 @@
 import './MenuItems.css'
-
+import { scrollTo } from './scrollTo'
 const items = [
   'About',
   'Photos',
@@ -7,11 +7,15 @@ const items = [
   'Pricing',
   'FAQs'
 ]
-export default function MenuItems() {
+export default function MenuItems({ closeSideMenu }) {
+  const itemClick = (item) => {
+    if (closeSideMenu) { closeSideMenu() }
+    scrollTo(item)
+  }
   return (
     <>
       {items.map((item, index) => {
-        return <div className='menuItems' key={`${index}`}>{item}</div>
+        return <div className='menuItems' key={`${index}`} onClick={() => itemClick(item)}>{item}</div>
       })}
     </>
   )
