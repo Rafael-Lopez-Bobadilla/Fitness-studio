@@ -6,7 +6,7 @@
   padding: 40px 0;
 }
 
-@media(min-width: 1279px){
+@media(min-width: 768px){
   .sectionTitle{
     font-size: 35px;
   }

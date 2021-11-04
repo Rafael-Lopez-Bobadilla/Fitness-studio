@@ -1,5 +1,5 @@
 .coaches{
-  --image-width: 16%;
+  --image-width: 26%;
   width: 100%;
   background-color: var(--grayBackground);
   font-family: mainFont;
@@ -66,7 +66,7 @@
   margin-bottom: 30px;
 }
 .coaches__description{
-  font-size: 1.3rem;
+  font-size: 20px;
   font-family: thinFont;
   font-weight: 500;
   line-height: 2rem;
@@ -87,20 +87,22 @@
   flex-direction: column;
   align-items: center;
   margin: 5px 0;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 .coaches__icon{
   width: 50px;
 }
-@media (min-width: 900px){
-.coaches__description{
-  width: 35%;
+
+@media (min-width: 850px){
+  .coaches__photosCenter{
+    width: 16%;
+  }
 }
 
-}
-@media (max-width: 800px){
-  .coaches__photosCenter{
-    width: 26%;
+@media(min-width: 1024px){
+  .coaches__description{
+    width: 35%;
+    font-size: 22px;
   }
 }
 

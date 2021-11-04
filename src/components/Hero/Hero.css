@@ -68,7 +68,9 @@
     letter-spacing: 3px;
     line-height: normal;
   }
+}
 
+@media(min-width: 1024px){
   .hero__arrowContainer{
     display: flex;
     flex-direction: column;
