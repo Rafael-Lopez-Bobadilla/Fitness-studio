@@ -97,10 +97,10 @@ export default function Coaches() {
         </div>
       </div>
       <div className='coaches__name'>{coaches[getCenterPhotoIndex()].name}</div>
-      <div class='coaches__description'>
+      <div className='coaches__description'>
         {coaches[getCenterPhotoIndex()].description}
       </div>
-      <div class='coaches__icons'>
+      <div className='coaches__icons'>
         {coaches[getCenterPhotoIndex()].icons.map((icon, index) => {
           return <div key={index} className="coaches__iconContainer">
             <img src={icon.icon} className="coaches__icon" alt="not found" />

@@ -1,5 +1,5 @@
 .photos{
-  padding-bottom: 90px;
+  padding-bottom: 150px;
   --arrowPositionPhone: 30%;
   --arrowPositionBig: 40%
 }
@@ -87,8 +87,5 @@
   .photos__arrow{
     position: static;
     margin: 20px;
-  }
-  .photos{
-    padding-bottom: 70px;
   }
 }
