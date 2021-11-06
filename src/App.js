@@ -5,6 +5,7 @@ import Photos from './components/Photos/Photos'
 import Coaches from './components/Coaches/Coaches'
 import Pricing from './components/Pricing/Pricing'
 import Faqs from './components/Faqs/Faqs'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Coaches />
       <Pricing />
       <Faqs />
+      <Footer />
     </>
   );
 }
