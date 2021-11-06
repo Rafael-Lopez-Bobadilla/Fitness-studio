@@ -13,7 +13,7 @@ export const cards = [
   },
   {
     name: 'ADVANCED',
-    color: 'orangered',
+    color: 'darkOrange',
     price: 399,
     features: [
       'Personalized Fitness Program Design',
@@ -25,7 +25,7 @@ export const cards = [
   },
   {
     name: 'ELITE',
-    color: 'limegreen',
+    color: 'green',
     price: 499,
     features: [
       'Personalized Fitness Program Design',

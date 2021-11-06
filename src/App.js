@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Photos from './components/Photos/Photos'
 import Coaches from './components/Coaches/Coaches'
 import Pricing from './components/Pricing/Pricing'
+import Faqs from './components/Faqs/Faqs'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Photos />
       <Coaches />
       <Pricing />
+      <Faqs />
     </>
   );
 }
