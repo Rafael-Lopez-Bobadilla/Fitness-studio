@@ -1,3 +1,6 @@
+## Hosted on GitHub pages
+https://rafael-lopez-bobadilla.github.io/Fitness-studio/
+
 ## Available Scripts
 
 In the project directory, you can run:
